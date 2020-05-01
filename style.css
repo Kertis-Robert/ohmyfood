@@ -1,0 +1,169 @@
+.body
+{
+    margin: auto;
+    max-width: 850px;
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    height: 130px;
+    text-align: justify;
+    margin-bottom: 5%;
+    background-color: rgb(87, 156, 135);
+}
+a
+{
+    text-decoration: none; /* retire l'effet souligné des liens */
+}
+h1
+{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+h1 a
+{
+    color: #FDCB46;
+}
+section
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+}
+.box1 /* faire une mixin des box */
+{
+    font-family: 'Damion', cursive;
+    font-size: 27px;
+    background-color: #fcdfdb;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    width: 30%;
+    margin: auto;
+    margin-left: 15%;
+}
+.box1 a
+{
+    color: rgb(0, 0, 0)
+}
+.box2
+{
+    font-family: 'Kurale', serif;
+    font-size: 25px;
+    background-color: #fff5fe;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    width: 30%;
+    margin: auto;
+    margin-right: 15%;
+}
+.box2 p
+{
+    
+}
+.box3
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 28px;
+    background-color: #f9f9f9;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    width: 30%;
+    margin: auto;
+    margin-left: 15%;
+    margin-top: 2rem;
+}
+.box3 p
+{
+    
+}
+.box3 div
+{
+    font-family: 'Kalam', cursive;
+}
+.box4
+{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 26px;
+    background-color: #fdfffd;
+    height: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    width: 30%;
+    margin: auto;
+    margin-right: 15%;
+    margin-top: 2rem;
+}
+.box4 p
+{
+    
+}
+.box4 div
+{
+    font-family: 'Kalam', cursive;
+}
+.next /* height= 60px mais bug */
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(87, 156, 135);
+    text-align: center;
+    width: 40%;
+    height: 65px;
+    margin: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+.next p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    color: #FDCB46;
+}
+footer
+{
+    width: 100%;
+    display: flex;
+    background-color: rgb(87, 156, 135);  
+}
+.gauche
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    padding-right: 41%;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #FDCB46;
+}
+.droite
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: #FDCB46;
+}
