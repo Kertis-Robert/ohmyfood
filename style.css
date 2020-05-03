@@ -3,7 +3,7 @@
     margin: auto;
     max-width: 850px;
 }
-header
+header /* @mixin display (display flex, align-item center, justify-content center) */
 {
     display: flex;
     justify-content: center;
@@ -12,7 +12,8 @@ header
     height: 130px;
     text-align: justify;
     margin-bottom: 5%;
-    background-color: rgb(87, 156, 135);
+    background-color: #579C87;
+    
 }
 a
 {
@@ -29,97 +30,131 @@ h1 a
 {
     color: #FDCB46;
 }
-section
+section  /* @mixin display (display flex, align-item center, justify-content center) */
 {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-items: center;
     justify-content: center;
 }
-.box1 /* faire une mixin des box */
+.box1 /* @mixin display */
 {
     font-family: 'Damion', cursive;
-    font-size: 27px;
+    font-size: 28px;
     background-color: #fcdfdb;
-    height: 410px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
-    width: 30%;
+    width: 33%;
     margin: auto;
-    margin-left: 15%;
+    margin-left: 13%;
+}
+.fa-music:before
+{
+    margin-bottom: 0px;
+    background: linear-gradient(to left, #f6916a, #f05561);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box1 p
+{
+    margin-top: 0px;
 }
 .box1 a
 {
-    color: rgb(0, 0, 0)
+    color: rgb(0, 0, 0);
+}
+.box1 div
+{
+    font-family: 'Kalam', cursive;
+    font-weight: 600;
 }
 .box2
 {
     font-family: 'Kurale', serif;
-    font-size: 25px;
     background-color: #fff5fe;
-    height: 410px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
-    width: 30%;
+    width: 33%;
     margin: auto;
-    margin-right: 15%;
+    margin-right: 13%;
 }
 .box2 p
 {
-    
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(to right, #e0881d, #8f5aff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.box2 div
+{
+    font-size: 32px;
+    font-weight: 600;
+    color: #c77412;
 }
 .box3
 {
     font-family: 'Dancing Script', cursive;
-    font-size: 28px;
     background-color: #f9f9f9;
-    height: 410px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
-    width: 30%;
+    width: 33%;
     margin: auto;
-    margin-left: 15%;
-    margin-top: 2rem;
+    margin-left: 13%;
+    margin-top: 3rem;
 }
 .box3 p
 {
-    
+    font-size: 29px;
+    background: linear-gradient(to right, #0229dd, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .box3 div
 {
+    color: #0887fb;
+    font-size: 32px;
     font-family: 'Kalam', cursive;
 }
 .box4
 {
     font-family: 'Kaushan Script', cursive;
-    font-size: 26px;
     background-color: #fdfffd;
-    height: 410px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
-    width: 30%;
+    width: 33%;
     margin: auto;
-    margin-right: 15%;
-    margin-top: 2rem;
+    margin-right: 13%;
+    margin-top: 3rem;
 }
 .box4 p
 {
-    
+    font-size: 27px;
+    background: linear-gradient(to right, #499c40, #beff7f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .box4 div
 {
+    color: #72bf56;
+    font-size: 32px;
     font-family: 'Kalam', cursive;
 }
 .next /* height= 60px mais bug */
@@ -151,8 +186,8 @@ footer
 .gauche
 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    padding-right: 41%;
+    font-size: 25px;
+    padding-right: 53%;
     padding-left: 1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -161,7 +196,7 @@ footer
 .droite
 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
+    font-size: 25px;
     padding-right: 1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
