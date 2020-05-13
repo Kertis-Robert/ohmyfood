@@ -1,9 +1,10 @@
-.body
-{
+.body {
+    
     margin: auto;
     max-width: 850px;
 }
-@mixin display{
+@mixin display {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,14 +13,9 @@
     width: 33%;
     height: 400px;
 }
-@mixin menumation{
-    :hover{
-        transform: scale(1.25);
-        transition: transform 500ms ease-in-out;
-    }
-}
-header /* @mixin display (display flex, align-item center, justify-content center) */
-{
+
+header {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,130 +26,200 @@ header /* @mixin display (display flex, align-item center, justify-content cente
     background-color: #579C87;
     
 }
-a
-{
+a {
+    
     text-decoration: none; /* retire l'effet souligné des liens */
 }
-h1
-{
+
+h1 {
+    
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding-bottom: 5%;
     padding-top: 5%;
-}
-h1 a
-{
+    
+    a {
+        
     color: #FDCB46;
+    }
 }
-section  /* @mixin display (display flex, align-item center, justify-content center) */
-{
+
+section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
-.box1 /* @mixin display */
-{
-    @include menumation;
+
+.box1 {
+    
     @include display;
     font-family: 'Damion', cursive;
     font-size: 28px;
-    background-color: #fcdfdb;
     margin: auto;
     margin-left: 13%;
+    background-color: rgb(252, 223, 219);
+    transition: all 1s ease;
+    
+    &:hover{
+        
+        transform: scale(1.05);
+        background-color: rgba(252, 223, 219, 0.7);
+    }
+    a{
+        color: rgb(0, 0, 0);
+        transition: transform 0.7s ease;
+        
+        &:hover{
+            
+            transform: scale(1.15);
+            
+            }
+        
+            p {
+                
+                margin-top: 0px;
+             }
+            
+            div {
+                
+                font-family: 'Kalam', cursive;
+                font-weight: 600;
+                }
+    }
 }
-.fa-music:before
-{
+
+.fa-music:before {
     margin-bottom: 0px;
     background: linear-gradient(to left, #f6916a, #f05561);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.box1 p
-{
-    margin-top: 0px;
-}
-.box1 a
-{
-    color: rgb(0, 0, 0);
-}
-.box1 div
-{
-    font-family: 'Kalam', cursive;
-    font-weight: 600;
-}
-.box2
-{
-    @include menumation;
+
+.box2 {
+    
     @include display;
     font-family: 'Kurale', serif;
-    background-color: #fff5fe;
     margin: auto;
     margin-right: 13%;
+    background-color: rgb(255, 245, 254);
+    transition: all 1s ease;
+    
+    &:hover {
+        
+        transform: scale(1.05);
+        background-color: rgba(255, 245, 254, 0.7);   
+        }
+    
+    a {
+        
+        &:hover {
+            
+            transform: scale(1.15);
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        p {
+            
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #e0881d, #8f5aff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        
+        div {
+            
+            font-size: 32px;
+            font-weight: 600;
+            color: #c77412;
+        }
+    }
 }
-.box2 p
-{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(to right, #e0881d, #8f5aff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.box2 div
-{
-    font-size: 32px;
-    font-weight: 600;
-    color: #c77412;
-}
-.box3
-{
-    @include menumation;
+
+.box3 {
+    
     @include display;
     font-family: 'Dancing Script', cursive;
-    background-color: #f9f9f9;
     margin: auto;
     margin-left: 13%;
     margin-top: 3rem;
-}
-.box3 p
-{
+    background-color: rgb(249, 249, 249);
+    transition: all 1s ease;
+    
+    &:hover {
+        
+        transform: scale(1.05);
+        background-color: rgba(249, 249, 249, 0.6);
+    }
+    a {
+        
+        &:hover {
+            
+            transform: scale(1.15);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    
+    p {
+        
     font-size: 29px;
     background: linear-gradient(to right, #0229dd, #0889fb);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.box3 div
-{
+    }
+        
+    div {
+        
     color: #0887fb;
     font-size: 32px;
     font-family: 'Kalam', cursive;
+    }
 }
-.box4
-{
-    @include menumation;
+        
+.box4 {
+    
     @include display;
     font-family: 'Kaushan Script', cursive;
     background-color: #fdfffd;
     margin: auto;
     margin-right: 13%;
     margin-top: 3rem;
-}
-.box4 p
-{
+    transition: all 1s ease;
+    
+    &:hover {
+        
+        transform: scale(1.05);
+    }
+    
+     a {
+        
+        &:hover {
+            
+            transform: scale(1.15);
+            transition: transform 0.5s ease-in-out;
+        }
+    }
+    
+    p {
+        
     font-size: 27px;
     background: linear-gradient(to right, #499c40, #beff7f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.box4 div
-{
+    }
+    
+    div {
+        
     color: #72bf56;
     font-size: 32px;
     font-family: 'Kalam', cursive;
+    }
 }
-.next /* height= 60px mais bug */
-{
+
+.next {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,35 +231,147 @@ section  /* @mixin display (display flex, align-item center, justify-content cen
     margin: auto;
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
-}
-.next p
-{
+    
+    p {
+        
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
     color: #FDCB46;
+    }
 }
-footer
-{
+
+.dot-falling {
+    
+      display: none;
+      align-items: center;
+      position: relative;
+      left: -9999px;
+      width: 10px;
+      height: 10px;
+      border-radius: 5px;
+      background-color: #FDCB46;
+      color: #FDCB46;
+      box-shadow: 9999px 0 0 0 #FDCB46;
+      animation: dotFalling 1s infinite linear;
+      animation-delay: .1s;
+        
+        &:before, &:after{
+            
+            content: '';
+            display: inline-block;
+            position: absolute;
+            top: 0;
+        }
+}
+        
+.soon {
+    
+    transition: all 0.5s ease;
+    
+    &:hover{
+        
+        .soon {
+            
+        display: none; 
+        }
+        
+        .dot-falling {
+            
+            display: flex;
+        }
+    }
+}
+        .dot-falling::before {
+
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: #FDCB46;
+          color: #FDCB46;
+          animation: dotFallingBefore 1s infinite linear;
+          animation-delay: 0s;
+        }
+
+        .dot-falling::after {
+
+          width: 10px;
+          height: 10px;
+          border-radius: 5px;
+          background-color: #FDCB46;
+          color: #FDCB46;
+          animation: dotFallingAfter 1s infinite linear;
+          animation-delay: .2s;
+        }
+
+
+        @keyframes dotFalling {
+          0% {
+            box-shadow: 9999px -15px 0 0 rgba(152, 128, 255, 0);
+          }
+          25%,
+          50%,
+          75% {
+            box-shadow: 9999px 0 0 0 #FDCB46;
+          }
+          100% {
+            box-shadow: 9999px 15px 0 0 rgba(152, 128, 255, 0);
+          }
+        }
+
+        @keyframes dotFallingBefore {
+          0% {
+            box-shadow: 9984px -15px 0 0 rgba(152, 128, 255, 0);
+          }
+          25%,
+          50%,
+          75% {
+            box-shadow: 9984px 0 0 0 #FDCB46;
+          }
+          100% {
+            box-shadow: 9984px 15px 0 0 rgba(152, 128, 255, 0);
+          }
+        }
+
+        @keyframes dotFallingAfter {
+          0% {
+            box-shadow: 10014px -15px 0 0 rgba(152, 128, 255, 0);
+          }
+          25%,
+          50%,
+          75% {
+            box-shadow: 10014px 0 0 0 #FDCB46;
+          }
+          100% {
+            box-shadow: 10014px 15px 0 0 rgba(152, 128, 255, 0);
+          }
+        }
+
+
+footer {
+    
     width: 100%;
     display: flex;
-    background-color: rgb(87, 156, 135);  
-}
-.gauche
-{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    padding-right: 53%;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    color: #FDCB46;
-}
-.droite
-{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    color: #FDCB46;
+    background-color: rgb(87, 156, 135); 
+
+    
+    .gauche {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        padding-right: 53%;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        color: #FDCB46;
+    }
+        
+    .droite {
+        
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        color: #FDCB46
+    }
 }
