@@ -385,10 +385,10 @@ footer {
 
         @-webkit-keyframes wiggle {
                 
-            0% {-webkit-transform: rotate(5deg);}
+            0% {-webkit-transform: rotate(3deg);}
             25% {-webkit-transform: rotate(-5deg);}
-            50% {-webkit-transform: rotate(10deg);}
-            75% {-webkit-transform: rotate(-5deg);}
+            50% {-webkit-transform: rotate(5deg);}
+            75% {-webkit-transform: rotate(-3deg);}
             100% {-webkit-transform: rotate(0deg);}
         }
 
@@ -403,10 +403,10 @@ footer {
 
         @keyframes wiggle {
                 
-            0% {transform: rotate(5deg);}
+            0% {transform: rotate(3deg);}
             25% {transform: rotate(-5deg);}
-            50% {transform: rotate(10deg);}
-            75% {transform: rotate(-5deg);}
+            50% {transform: rotate(5deg);}
+            75% {transform: rotate(-3deg);}
             100% {transform: rotate(0deg);}
         }
 
@@ -439,10 +439,10 @@ footer {
 
         @-webkit-keyframes wiggle {
                 
-            0% {-webkit-transform: rotate(5deg);}
+            0% {-webkit-transform: rotate(3deg);}
             25% {-webkit-transform: rotate(-5deg);}
-            50% {-webkit-transform: rotate(10deg);}
-            75% {-webkit-transform: rotate(-5deg);}
+            50% {-webkit-transform: rotate(5deg);}
+            75% {-webkit-transform: rotate(-3deg);}
             100% {-webkit-transform: rotate(0deg);}
         }
 
@@ -457,10 +457,10 @@ footer {
 
         @keyframes wiggle {
                 
-            0% {transform: rotate(5deg);}
+            0% {transform: rotate(3deg);}
             25% {transform: rotate(-5deg);}
-            50% {transform: rotate(10deg);}
-            75% {transform: rotate(-5deg);}
+            50% {transform: rotate(5deg);}
+            75% {transform: rotate(-3deg);}
             100% {transform: rotate(0deg);}
         }
     }
