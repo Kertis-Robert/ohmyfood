@@ -1,0 +1,80 @@
+h2 {
+    
+    text-align: center;
+}
+
+i {
+    
+    margin: auto;
+    padding-top: 10%;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+h4 {
+    
+    width: 100%;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+h5 {
+    
+    width: 100%;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    
+}
+section {
+    
+    margin: auto;
+}
+
+.box {
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(252, 223, 219);
+    margin: auto;
+    margin-bottom: 8%;
+    max-width: 600px;
+}
+
+.name {
+        
+        width: 75%;
+        margin-top: 3%;
+        margin-left: 8%;
+        margin-bottom: 3%;
+}
+    
+.price {
+        
+        display: flex;
+        padding-top: 3%;
+        width: 7%;
+        text-align: end;
+}
+
+.dessert {
+    
+        width: 90%;
+        margin-top: 3%;
+        margin-left: 8%;
+        margin-bottom: 3%;
+}
+
+.fa-music:before {
+    
+    margin-bottom: 0px;
+    background: linear-gradient(to left, #f6916a, #f05561);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
