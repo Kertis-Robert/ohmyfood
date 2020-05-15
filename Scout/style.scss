@@ -3,6 +3,7 @@
     margin: auto;
     max-width: 850px;
 }
+
 @mixin display {
     
     display: flex;
@@ -24,8 +25,8 @@ header {
     text-align: justify;
     margin-bottom: 5%;
     background-color: #579C87;
-    
 }
+
 a {
     
     text-decoration: none; /* retire l'effet souligné des liens */
@@ -40,7 +41,7 @@ h1 {
     
     a {
         
-    color: #FDCB46;
+        color: #FDCB46;
     }
 }
 
@@ -60,41 +61,42 @@ section {
     margin: auto;
     margin-left: 13%;
     background-color: rgb(252, 223, 219);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     
     &:hover{
         
         transform: scale(1.05);
         background-color: rgba(252, 223, 219, 0.7);
     }
-    a{
+    
+    a {
         color: rgb(0, 0, 0);
         transition: transform 0.7s ease;
         
         &:hover{
             
-            transform: scale(1.15);
-            
-            }
+            transform: scale(1.15);    
+        }
         
             p {
                 
                 margin-top: 0px;
-             }
+            }
             
             div {
                 
                 font-family: 'Kalam', cursive;
                 font-weight: 600;
-                }
+            }
     }
 }
 
 .fa-music:before {
+    
     margin-bottom: 0px;
     background: linear-gradient(to left, #f6916a, #f05561);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .box2 {
@@ -104,13 +106,13 @@ section {
     margin: auto;
     margin-right: 13%;
     background-color: rgb(255, 245, 254);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     
     &:hover {
         
         transform: scale(1.05);
         background-color: rgba(255, 245, 254, 0.7);   
-        }
+    }
     
     a {
         
@@ -126,8 +128,8 @@ section {
             font-weight: 600;
             margin-bottom: 0.5rem;
             background: linear-gradient(to right, #e0881d, #8f5aff);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         div {
@@ -147,13 +149,14 @@ section {
     margin-left: 13%;
     margin-top: 3rem;
     background-color: rgb(249, 249, 249);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     
     &:hover {
         
         transform: scale(1.05);
         background-color: rgba(249, 249, 249, 0.6);
     }
+    
     a {
         
         &:hover {
@@ -165,17 +168,17 @@ section {
     
     p {
         
-    font-size: 29px;
-    background: linear-gradient(to right, #0229dd, #0889fb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+        font-size: 29px;
+        background: linear-gradient(to right, #0229dd, #0889fb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
         
     div {
         
-    color: #0887fb;
-    font-size: 32px;
-    font-family: 'Kalam', cursive;
+        color: #0887fb;
+        font-size: 32px;
+        font-family: 'Kalam', cursive;
     }
 }
         
@@ -187,7 +190,7 @@ section {
     margin: auto;
     margin-right: 13%;
     margin-top: 3rem;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
     
     &:hover {
         
@@ -205,17 +208,17 @@ section {
     
     p {
         
-    font-size: 27px;
-    background: linear-gradient(to right, #499c40, #beff7f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+        font-size: 27px;
+        background: linear-gradient(to right, #499c40, #beff7f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     
     div {
         
-    color: #72bf56;
-    font-size: 32px;
-    font-family: 'Kalam', cursive;
+        color: #72bf56;
+        font-size: 32px;
+        font-family: 'Kalam', cursive;
     }
 }
 
@@ -235,9 +238,9 @@ section {
     
     p {
         
-    font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    color: #FDCB46;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 32px;
+        color: #FDCB46;
     }
 }
 
@@ -256,7 +259,7 @@ section {
       animation: dotFalling 1s infinite linear;
       animation-delay: .1s;
         
-        &:before, &:after{
+        &:before, &:after {
             
             content: '';
             display: inline-block;
@@ -273,7 +276,7 @@ section {
         
         .soon {
             
-        display: none; 
+            display: none; 
         }
         
         .dot-falling {
@@ -354,19 +357,62 @@ footer {
     display: flex;
     background-color: rgb(87, 156, 135); 
 
-    
-    .gauche {
+    .left {
 
         font-family: 'Open Sans', sans-serif;
         font-size: 25px;
-        padding-right: 53%;
         padding-left: 1rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
-        color: #FDCB46;
+        color: #FDCB46;  
+        
+        a {
+        
+            color: #FDCB46;
+        }   
+    
+        &:hover {
+                
+            -webkit-animation-name: wiggle;
+            -ms-animation-name: wiggle;
+            -ms-animation-duration: 1000ms;
+            -webkit-animation-duration: 1000ms;
+            -webkit-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+            -webkit-animation-timing-function: ease-in-out;
+            -ms-animation-timing-function: ease-in-out;
+        }
+
+        @-webkit-keyframes wiggle {
+                
+            0% {-webkit-transform: rotate(10deg);}
+            25% {-webkit-transform: rotate(-10deg);}
+            50% {-webkit-transform: rotate(20deg);}
+            75% {-webkit-transform: rotate(-5deg);}
+            100% {-webkit-transform: rotate(0deg);}
+        }
+
+        @-ms-keyframes wiggle {
+                
+            0% {-ms-transform: rotate(1deg);}
+            25% {-ms-transform: rotate(-1deg);}
+            50% {-ms-transform: rotate(1.5deg);}
+            75% {-ms-transform: rotate(-5deg);}
+            100% {-ms-transform: rotate(0deg);}
+        }
+
+        @keyframes wiggle {
+                
+            0% {transform: rotate(10deg);}
+            25% {transform: rotate(-10deg);}
+            50% {transform: rotate(20deg);}
+            75% {transform: rotate(-5deg);}
+            100% {transform: rotate(0deg);}
+        }
+
     }
         
-    .droite {
+    .right {
         
         font-family: 'Open Sans', sans-serif;
         font-size: 25px;
@@ -375,47 +421,55 @@ footer {
         padding-top: 1rem;
         
         a {
-            
+        
             color: #FDCB46;
-            
-            &:hover {
+        }   
+    
+        &:hover {
                 
-              -webkit-animation-name: wiggle;
-              -ms-animation-name: wiggle;
-              -ms-animation-duration: 1000ms;
-              -webkit-animation-duration: 1000ms;
-              -webkit-animation-iteration-count: 1;
-              -ms-animation-iteration-count: 1;
-              -webkit-animation-timing-function: ease-in-out;
-              -ms-animation-timing-function: ease-in-out;
-            }
+            -webkit-animation-name: wiggle;
+            -ms-animation-name: wiggle;
+            -ms-animation-duration: 1000ms;
+            -webkit-animation-duration: 1000ms;
+            -webkit-animation-iteration-count: 1;
+            -ms-animation-iteration-count: 1;
+            -webkit-animation-timing-function: ease-in-out;
+            -ms-animation-timing-function: ease-in-out;
+        }
+
+        @-webkit-keyframes wiggle {
+                
+            0% {-webkit-transform: rotate(10deg);}
+            25% {-webkit-transform: rotate(-10deg);}
+            50% {-webkit-transform: rotate(20deg);}
+            75% {-webkit-transform: rotate(-5deg);}
+            100% {-webkit-transform: rotate(0deg);}
+        }
+
+        @-ms-keyframes wiggle {
+                
+            0% {-ms-transform: rotate(1deg);}
+            25% {-ms-transform: rotate(-1deg);}
+            50% {-ms-transform: rotate(1.5deg);}
+            75% {-ms-transform: rotate(-5deg);}
+            100% {-ms-transform: rotate(0deg);}
+        }
+
+        @keyframes wiggle {
+                
+            0% {transform: rotate(10deg);}
+            25% {transform: rotate(-10deg);}
+            50% {transform: rotate(20deg);}
+            75% {transform: rotate(-5deg);}
+            100% {transform: rotate(0deg);}
         }
     }
+    
+    .center {
+        
+        opacity: 0;
+        padding-left: 27%;
+        padding-right: 26%;
+    }
 }
-
-            @-webkit-keyframes wiggle {
-                
-              0% {-webkit-transform: rotate(10deg);}
-              25% {-webkit-transform: rotate(-10deg);}
-              50% {-webkit-transform: rotate(20deg);}
-              75% {-webkit-transform: rotate(-5deg);}
-              100% {-webkit-transform: rotate(0deg);}
-            }
-
-            @-ms-keyframes wiggle {
-                
-              0% {-ms-transform: rotate(1deg);}
-              25% {-ms-transform: rotate(-1deg);}
-              50% {-ms-transform: rotate(1.5deg);}
-              75% {-ms-transform: rotate(-5deg);}
-              100% {-ms-transform: rotate(0deg);}
-            }
-
-            @keyframes wiggle {
-                
-              0% {transform: rotate(10deg);}
-              25% {transform: rotate(-10deg);}
-              50% {transform: rotate(20deg);}
-              75% {transform: rotate(-5deg);}
-              100% {transform: rotate(0deg);}
-            }
+        
