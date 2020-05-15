@@ -44,7 +44,12 @@ footer {
         padding-left: 1rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
-        color: #FDCB46;     
+        color: #FDCB46;  
+        
+        a {
+        
+            color: #FDCB46;
+        }   
     
         &:hover {
                 
@@ -60,10 +65,10 @@ footer {
 
         @-webkit-keyframes wiggle {
                 
-            0% {-webkit-transform: rotate(10deg);}
-            25% {-webkit-transform: rotate(-10deg);}
-            50% {-webkit-transform: rotate(20deg);}
-            75% {-webkit-transform: rotate(-5deg);}
+            0% {-webkit-transform: rotate(3deg);}
+            25% {-webkit-transform: rotate(-5deg);}
+            50% {-webkit-transform: rotate(5deg);}
+            75% {-webkit-transform: rotate(-3deg);}
             100% {-webkit-transform: rotate(0deg);}
         }
 
@@ -78,10 +83,10 @@ footer {
 
         @keyframes wiggle {
                 
-            0% {transform: rotate(10deg);}
-            25% {transform: rotate(-10deg);}
-            50% {transform: rotate(20deg);}
-            75% {transform: rotate(-5deg);}
+            0% {transform: rotate(3deg);}
+            25% {transform: rotate(-5deg);}
+            50% {transform: rotate(5deg);}
+            75% {transform: rotate(-3deg);}
             100% {transform: rotate(0deg);}
         }
 
@@ -94,7 +99,12 @@ footer {
         padding-right: 1rem;
         padding-bottom: 1rem;
         padding-top: 1rem;
-   
+        
+        a {
+        
+            color: #FDCB46;
+        }   
+    
         &:hover {
                 
             -webkit-animation-name: wiggle;
@@ -109,10 +119,10 @@ footer {
 
         @-webkit-keyframes wiggle {
                 
-            0% {-webkit-transform: rotate(10deg);}
-            25% {-webkit-transform: rotate(-10deg);}
-            50% {-webkit-transform: rotate(20deg);}
-            75% {-webkit-transform: rotate(-5deg);}
+            0% {-webkit-transform: rotate(3deg);}
+            25% {-webkit-transform: rotate(-5deg);}
+            50% {-webkit-transform: rotate(5deg);}
+            75% {-webkit-transform: rotate(-3deg);}
             100% {-webkit-transform: rotate(0deg);}
         }
 
@@ -127,10 +137,10 @@ footer {
 
         @keyframes wiggle {
                 
-            0% {transform: rotate(10deg);}
-            25% {transform: rotate(-10deg);}
-            50% {transform: rotate(20deg);}
-            75% {transform: rotate(-5deg);}
+            0% {transform: rotate(3deg);}
+            25% {transform: rotate(-5deg);}
+            50% {transform: rotate(5deg);}
+            75% {transform: rotate(-3deg);}
             100% {transform: rotate(0deg);}
         }
     }
