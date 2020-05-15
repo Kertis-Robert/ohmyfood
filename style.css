@@ -51,7 +51,7 @@ section {
   margin: auto;
   margin-left: 13%;
   background-color: #fcdfdb;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .box1:hover {
@@ -96,7 +96,7 @@ section {
   margin: auto;
   margin-right: 13%;
   background-color: #fff5fe;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .box2:hover {
@@ -137,7 +137,7 @@ section {
   margin-left: 13%;
   margin-top: 3rem;
   background-color: #f9f9f9;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .box3:hover {
@@ -176,7 +176,7 @@ section {
   margin: auto;
   margin-right: 13%;
   margin-top: 3rem;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .box4:hover {
@@ -323,29 +323,20 @@ footer {
   background-color: #579c87;
 }
 
-footer .gauche {
+footer .left {
   font-family: 'Open Sans', sans-serif;
   font-size: 25px;
-  padding-right: 53%;
   padding-left: 1rem;
   padding-bottom: 1rem;
   padding-top: 1rem;
   color: #FDCB46;
 }
 
-footer .droite {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
-  padding-right: 1rem;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-}
-
-footer .droite a {
+footer .left a {
   color: #FDCB46;
 }
 
-footer .droite a:hover {
+footer .left:hover {
   -webkit-animation-name: wiggle;
   -ms-animation-name: wiggle;
   -ms-animation-duration: 1000ms;
@@ -375,19 +366,19 @@ footer .droite a:hover {
 }
 
 @-ms-keyframes wiggle {
-  0% {
+  footer .left 0% {
     -ms-transform: rotate(1deg);
   }
-  25% {
+  footer .left 25% {
     -ms-transform: rotate(-1deg);
   }
-  50% {
+  footer .left 50% {
     -ms-transform: rotate(1.5deg);
   }
-  75% {
+  footer .left 75% {
     -ms-transform: rotate(-5deg);
   }
-  100% {
+  footer .left 100% {
     -ms-transform: rotate(0deg);
   }
 }
@@ -408,4 +399,87 @@ footer .droite a:hover {
   100% {
     transform: rotate(0deg);
   }
+}
+
+footer .right {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+footer .right a {
+  color: #FDCB46;
+}
+
+footer .right:hover {
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 1000ms;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotate(10deg);
+  }
+  25% {
+    -webkit-transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes wiggle {
+  footer .right 0% {
+    -ms-transform: rotate(1deg);
+  }
+  footer .right 25% {
+    -ms-transform: rotate(-1deg);
+  }
+  footer .right 50% {
+    -ms-transform: rotate(1.5deg);
+  }
+  footer .right 75% {
+    -ms-transform: rotate(-5deg);
+  }
+  footer .right 100% {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+footer .center {
+  opacity: 0;
+  padding-left: 27%;
+  padding-right: 26%;
 }
