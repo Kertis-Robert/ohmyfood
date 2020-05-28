@@ -1,35 +1,71 @@
+header {
+    
+    margin-bottom: 4%;
+}
+
 h2 {
     
     text-align: center;
 }
 
-i {
-    
+.top {
+    font-size: 40px;
     margin: auto;
-    padding-top: 10%;
-    padding-bottom: 0.5rem;
+    padding-top: 5%;
 }
 
 h3 {
     
+    font-size: 40px;
+    font-weight: 400;
     width: 100%;
     text-align: center;
-    margin-top: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 h4 {
-    
+    font-size: 30px;
+    font-weight: 400;
     width: 100%;
     text-align: center;
-    margin-top: 7%;
     margin-bottom: 7%;
 }
 h5 {
     
-    width: 100%;
+    font-size: 25px;
+    font-weight: 400;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 1%;
     text-align: center;
+    
+    p {
+        
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+    
+    p:after {    
+    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: rgb(0, 0, 0);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }   
+    
+    p:hover:after { 
+        
+      width: 100%; 
+      left: 0; 
+    } 
     
 }
 section {
@@ -39,36 +75,52 @@ section {
 
 .box {
     
+    font-family: 'Damion', cursive;
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(252, 223, 219);
     margin: auto;
-    margin-bottom: 8%;
+    margin-bottom: 4%;
     max-width: 600px;
+    
+    p {
+        
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
 }
 
 .name {
         
-        width: 75%;
-        margin-top: 3%;
-        margin-left: 8%;
-        margin-bottom: 3%;
+    font-size: 18px;
+    font-weight: 400;
+    width: 75%;
+    margin-top: 2%;
+    margin-left: 8%;
+    margin-bottom: 3%;
 }
     
 .price {
         
-        display: flex;
-        padding-top: 3%;
-        width: 7%;
-        text-align: end;
+    font-size: 18px;
+    display: flex;
+    padding-top: 2%;
+    width: 7%;
+    text-align: end;
 }
 
 .dessert {
     
-        width: 90%;
-        margin-top: 3%;
-        margin-left: 8%;
-        margin-bottom: 3%;
+    font-size: 18px;
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 8%;
+    margin-bottom: 2%;
+    
+    i {
+            
+        padding-top: 0%;
+    }
 }
 
 .fa-music:before {
@@ -77,4 +129,22 @@ section {
     background: linear-gradient(to left, #f6916a, #f05561);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.displayed {
+    
+    padding-right: 10%;
+    padding-top: 4%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
+}
+
+.displayed01 {
+    
+    padding-left: 8%;
+    padding-top: 4%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
 }
