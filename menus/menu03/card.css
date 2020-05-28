@@ -1,0 +1,103 @@
+h2 {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  margin-top: 7%;
+  margin-bottom: 0px;
+  background: linear-gradient(to right, #0229dd, #0889fb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h5 {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+h5 p {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+h5 p:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: black;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+h5 p:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+section {
+  margin: auto;
+}
+
+.box {
+  font-family: 'Kalam', cursive;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f0f0f0;
+  margin: auto;
+  margin-bottom: 4%;
+  max-width: 600px;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 400;
+  width: 75%;
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-bottom: 3%;
+  text-justify: auto;
+}
+
+.dessert {
+  font-size: 15px;
+  font-weight: 400;
+  width: 75%;
+  margin-top: 0%;
+  margin-left: 10%;
+  margin-bottom: 6%;
+  text-justify: auto;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 400;
+  display: flex;
+  width: 5%;
+  text-align: end;
+  margin-right: 10%;
+  text-justify: auto;
+}
+
+.displayed {
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 6%;
+  display: flex;
+  height: 10px;
+  max-width: 30%;
+}
