@@ -1,0 +1,205 @@
+h2 {
+    
+    text-align: center;
+}
+h3 {
+    
+    font-size: 39px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: 6%;
+    background: linear-gradient(to right, #e0881d, #8f5aff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+}
+
+@mixin price {
+    
+        font-size: 14px;
+        display: flex;
+        padding-top: 3%;
+        width: 7%;
+        text-align: end;
+        margin-right: 10%;
+}
+
+@mixin name {
+    
+        font-size: 14px;
+        width: 70%;
+        margin-top: 3%;
+        margin-left: 10%;
+}
+
+.A {
+    
+    display: flex;
+    color: rgb(198, 116, 18);
+    
+    p {
+        
+      color: rgb(198, 116, 18);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+    
+    p:after {    
+    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: rgb(198, 116, 18);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }   
+    
+    p:hover:after { 
+        
+      width: 100%; 
+      left: 0; 
+    } 
+}
+
+.B {
+    
+    margin: auto;
+    color: rgb(165, 103, 153);
+    
+    p {
+        
+      color: rgb(165, 103, 153);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+    
+    p:after {    
+    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: rgb(165, 103, 153);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }   
+    
+    p:hover:after { 
+        
+      width: 100%; 
+      left: 0; 
+    } 
+}
+
+.C {
+    
+    margin: auto;
+    color: rgb(110, 76, 204);
+    
+    p {
+        
+      color: rgb(110, 76, 204);
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+    }
+    
+    p:after {    
+    
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: rgb(110, 76, 204);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }   
+    
+    p:hover:after { 
+        
+      width: 100%; 
+      left: 0; 
+    } 
+}
+h5 {
+    
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    
+      
+}
+
+section {
+    
+    margin: auto;
+}
+
+.box {
+    
+    font-family: 'Kurale', serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 245, 254);
+    margin: auto;
+    margin-bottom: 4%;
+    width: 600px;
+}
+
+.nameA {
+    
+    @include name;
+    color: rgb(198, 116, 18); 
+}
+    
+.priceA {
+        
+    @include price;
+    color: rgb(198, 116, 18);
+}
+.nameB {
+    
+    @include name;
+    color: rgb(165, 103, 153);
+}
+.priceB {
+    
+    @include price;
+    color: rgb(165, 103, 153);
+}
+
+.dessert {
+    
+    font-size: 15px;
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    color: rgb(110, 76, 204);
+}
+
+.displayed {
+    
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    display: flex;
+    height: 10px;
+    max-width: 30%;
+}
