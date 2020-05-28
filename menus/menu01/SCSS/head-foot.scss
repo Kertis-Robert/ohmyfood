@@ -6,13 +6,14 @@
 
 header {
     
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 28px;
-    height: 130px;
+    font-size: 27px;
+    height: 100px;
     text-align: justify;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     background-color: #579C87;
 }
 
@@ -26,13 +27,15 @@ h1 {
     
     font-family: 'Open Sans', sans-serif;
     text-align: center;
-    padding-bottom: 5%;
-    padding-top: 5%;
+    margin: auto;
     color: #FDCB46; 
 }
 
 footer {
-    
+
+    position: sticky;
+    bottom: 1px;
+    max-width:  850px;
     width: 100%;
     display: flex;
     background-color: rgb(87, 156, 135); 
