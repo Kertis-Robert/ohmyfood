@@ -159,7 +159,7 @@ section {
     background-color: rgb(255, 245, 254);
     margin: auto;
     margin-bottom: 4%;
-    width: 600px;
+    max-width: 600px;
 }
 
 .nameA {
@@ -172,6 +172,7 @@ section {
         
     @include price;
     color: rgb(198, 116, 18);
+    flex-direction: column;
 }
 .nameB {
     
@@ -182,6 +183,7 @@ section {
     
     @include price;
     color: rgb(165, 103, 153);
+    flex-direction: column;
 }
 
 .dessert {
@@ -194,12 +196,44 @@ section {
     color: rgb(110, 76, 204);
 }
 
-.displayed {
+
+
+@media all and (min-width:768px) {
     
-    padding-left: 3%;
-    padding-right: 3%;
-    padding-top: 5%;
-    display: flex;
-    height: 10px;
-    max-width: 30%;
+    .displayed {
+    
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 5%;
+        display: flex;
+        height: 10px;
+        max-width: 30%;
+    }
+}
+
+@media all and (max-width:480px) {
+    
+    .displayed {
+    
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-top: 2%;
+        display: flex;
+        height: 10px;
+        max-width: 20%;
+        margin: auto;
+    }
+    
+    .priceB {
+        
+        div:nth-child(1){
+            
+            padding-bottom: 70%;
+        }
+        
+        div:nth-child(2) {
+            
+            padding-bottom: 70%;
+        }
+    }
 }
