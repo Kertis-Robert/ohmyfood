@@ -124,7 +124,7 @@ section {
   background-color: #fff5fe;
   margin: auto;
   margin-bottom: 4%;
-  width: 600px;
+  max-width: 600px;
 }
 
 .nameA {
@@ -143,6 +143,7 @@ section {
   text-align: end;
   margin-right: 10%;
   color: #c67412;
+  flex-direction: column;
 }
 
 .nameB {
@@ -161,6 +162,7 @@ section {
   text-align: end;
   margin-right: 10%;
   color: #a56799;
+  flex-direction: column;
 }
 
 .dessert {
@@ -172,11 +174,31 @@ section {
   color: #6e4ccc;
 }
 
-.displayed {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 5%;
-  display: flex;
-  height: 10px;
-  max-width: 30%;
+@media all and (min-width: 768px) {
+  .displayed {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 5%;
+    display: flex;
+    height: 10px;
+    max-width: 30%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .displayed {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    display: flex;
+    height: 10px;
+    max-width: 20%;
+    margin: auto;
+  }
+  .priceB div:nth-child(1) {
+    padding-bottom: 70%;
+  }
+  .priceB div:nth-child(2) {
+    padding-bottom: 70%;
+  }
 }
