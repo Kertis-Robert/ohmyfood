@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.body {
-  margin: auto;
-  max-width: 850px;
-  max-height: 1000px;
-}
-
 header {
     
     width: 100%;
@@ -39,7 +33,7 @@ h1 {
 footer {
     
     position: sticky;
-    bottom: 1px;
+    bottom: 8px;
     max-width:  850px;
     width: 100%;
     display: flex;
@@ -201,8 +195,34 @@ footer .right:hover {
   }
 }
 
-footer .center {
-  opacity: 0;
-  padding-left: 27%;
-  padding-right: 26%;
+
+@media all and (min-width: 780px) {
+  .body {
+    margin: auto;
+    max-width: 850px;
+  }
+    
+    footer .center {
+      opacity: 0;
+      padding-left: 27%;
+      padding-right: 26%;
+    }
+}
+
+@media all and (width:768px) {
+    footer .center {
+      opacity: 0;
+      padding-left: 21%;
+      padding-right: 26%;
+    }
+}
+
+@media all and (max-width:480px) {
+    footer .center {
+        padding-left: 0.5rem;
+    }
+    section {
+        font-size: 22px;
+        text-justify: auto;
+    }
 }
