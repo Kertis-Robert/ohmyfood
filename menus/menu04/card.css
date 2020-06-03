@@ -93,13 +93,34 @@ section {
   text-align: end;
   margin-right: 6%;
   text-justify: auto;
+  flex-direction: column;
 }
 
-.displayed {
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-top: 6%;
-  display: flex;
-  height: 10px;
-  max-width: 30%;
+@media all and (min-width: 768px) {
+  .displayed {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 6%;
+    display: flex;
+    height: 10px;
+    max-width: 30%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .displayed {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 9%;
+    display: flex;
+    height: 10px;
+    max-width: 30%;
+  }
+  .price div:nth-child(1) {
+    padding-top: 10%;
+    padding-bottom: 60%;
+  }
+  .price div:nth-child(2) {
+    padding-bottom: 60%;
+  }
 }
