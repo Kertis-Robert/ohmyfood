@@ -1,18 +1,10 @@
-.body {
-    
-    margin: auto;
-    max-width: 850px;
-    max-height: 1000px;
-}
-
-@mixin display {
+@mixin display { 
     
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
-    width: 28%;
     height: 325px;
 }
 
@@ -57,9 +49,7 @@ section {
     
     @include display;
     font-family: 'Damion', cursive;
-    font-size: 28px;
     margin: auto;
-    margin-left: 19%;
     background-color: rgb(252, 223, 219);
     transition: all 0.5s ease;
     
@@ -104,7 +94,6 @@ section {
     @include display;
     font-family: 'Kurale', serif;
     margin: auto;
-    margin-right: 19%;
     background-color: rgb(255, 245, 254);
     transition: all 0.5s ease;
     
@@ -146,8 +135,6 @@ section {
     @include display;
     font-family: 'Dancing Script', cursive;
     margin: auto;
-    margin-left: 19%;
-    margin-top: 2rem;
     background-color: rgb(240, 240, 240);
     transition: all 0.5s ease;
     
@@ -188,8 +175,6 @@ section {
     font-family: 'Kaushan Script', cursive;
     background-color: #fdfffd;
     margin: auto;
-    margin-right: 19%;
-    margin-top: 2rem;
     transition: all 0.5s ease;
     
     &:hover {
@@ -230,7 +215,7 @@ section {
     border-radius: 20px;
     background-color: rgb(87, 156, 135);
     text-align: center;
-    width: 40%;
+    
     height: 65px;
     margin: auto;
     margin-top: 1.5rem;
@@ -354,7 +339,7 @@ section {
 footer {
     
     position: sticky;
-    bottom: 1px;
+    bottom: 8px;
     max-width:  850px;
     width: 100%;
     display: flex;
@@ -468,6 +453,71 @@ footer {
         }
     }
     
+    
+}
+
+@media all and (min-width:780px) {
+    
+    @mixin display { 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    height: 325px;
+    }
+    
+    .body {
+    
+        margin: auto;
+        max-width: 850px;
+    }
+    
+    section {
+    
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box1 {
+        
+        @include display;
+        width: 28%;
+        font-size: 28px;
+        margin-left: 19%;
+    }
+    
+    .box2 {
+        
+        @include display;
+        width: 28%;
+        margin-right: 19%;
+    }
+    
+    .box3 {
+        
+        @include display;
+        width: 28%;
+        margin-left: 19%;
+        margin-top: 2rem;
+    }
+    
+    .box4 {
+        
+        @include display;
+        width: 28%;
+        margin-right: 19%;
+        margin-top: 2rem;
+    }
+    
+    .next {
+        
+        width: 40%;
+    }
+    
     .center {
         
         opacity: 0;
@@ -475,4 +525,123 @@ footer {
         padding-right: 26%;
     }
 }
+
+@media all and (width:768px) {
+
+    @mixin display { 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    height: 325px;
+    }
+    
+    .box1 {
         
+        @include display;
+        width: 28%;
+        font-size: 28px;
+        margin-left: 19%;
+    }
+    
+    .box2 {
+        
+        @include display;
+        width: 28%;
+        margin-right: 19%;
+    }
+    
+    .box3 {
+        
+        @include display;
+        width: 28%;
+        margin-left: 19%;
+        margin-top: 2rem;
+    }
+    
+    .box4 {
+        
+        @include display;
+        width: 28%;
+        margin-right: 19%;
+        margin-top: 2rem;
+    }
+    
+    .next {
+        
+        width: 40%;
+    }
+    
+    footer .center {
+        
+        padding-left: 21%;
+        padding-right: 26%;
+    }
+}
+
+@media all and (max-width:480px) {
+    
+    @mixin display { 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px 1px lightgrey;
+    height: 325px;
+    }
+    
+    section {
+        
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: 10%;
+    }
+    
+    .box1 {
+        
+        @include display;
+        width: 60%;
+        font-size: 24px;
+        margin-top: 1rem;
+        margin-bottom: 10%;
+    }
+    
+    .box2 {
+        
+        @include display;
+        width: 60%;
+        margin-top: 2rem;
+        margin-bottom: 10%;
+    }
+    
+    .box3 {
+        
+        @include display;
+        width: 60%;
+        margin-top: 2rem;
+        margin-bottom: 10%;
+    }
+    
+    .box4 {
+        
+        @include display;
+        width: 60%;
+        margin-top: 2rem;
+        margin-bottom: 10%;
+    }
+    
+    .next {
+        
+        width: 60%;
+        margin-bottom: 10%;
+    }
+    
+    footer .center {
+        
+        padding-left: 0.5rem;
+    }
+}
