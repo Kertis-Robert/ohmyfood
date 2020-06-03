@@ -1,10 +1,4 @@
 @charset "UTF-8";
-.body {
-  margin: auto;
-  max-width: 850px;
-  max-height: 1000px;
-}
-
 header {
   width: 100%;
   display: flex;
@@ -13,7 +7,6 @@ header {
   font-size: 27px;
   height: 100px;
   text-align: justify;
-  margin-bottom: 3%;
   background-color: #579C87;
 }
 
@@ -32,7 +25,7 @@ h1 {
 
 footer {
   position: sticky;
-  bottom: 1px;
+  bottom: 8px;
   max-width: 850px;
   width: 100%;
   display: flex;
@@ -198,4 +191,37 @@ footer .center {
   opacity: 0;
   padding-left: 27%;
   padding-right: 26%;
+}
+
+@media all and (min-width: 780px) {
+  .body {
+    margin: auto;
+    max-width: 850px;
+  }
+  footer .center {
+    opacity: 0;
+    padding-left: 27%;
+    padding-right: 26%;
+  }
+}
+
+@media all and (width: 768px) {
+  footer .center {
+    opacity: 0;
+    padding-left: 21%;
+    padding-right: 26%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  footer .left {
+    padding-right: 0.5rem;
+  }
+  footer .center {
+    display: none;
+  }
+  section {
+    font-size: 22px;
+    text-justify: auto;
+  }
 }
