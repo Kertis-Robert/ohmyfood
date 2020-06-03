@@ -100,14 +100,7 @@ section {
     margin-bottom: 3%;
 }
     
-.price {
-        
-    font-size: 18px;
-    display: flex;
-    padding-top: 2%;
-    width: 7%;
-    text-align: end;
-}
+
 
 .dessert {
     
@@ -131,20 +124,68 @@ section {
     -webkit-text-fill-color: transparent;
 }
 
-.displayed {
+@media all and (min-width:768px) {
     
-    padding-right: 10%;
-    padding-top: 4%;
-    display: flex;
-    height: 7px;
-    max-width: 25%;
+    .displayed {
+    
+        padding-right: 8%;
+        padding-top: 4%;
+        display: flex;
+        height: 7px;
+        max-width: 25%;
+    }
+
+    .displayed01 {
+    
+        padding-left: 8%;
+        padding-top: 4%;
+        display: flex;
+        height: 7px;
+        max-width: 25%;
+    }
+    
+    .price {
+        
+        font-size: 18px;
+        display: flex;
+        padding-top: 2%;
+        width: 7%;
+        text-align: end;
+        flex-direction: column;
+    }
 }
 
-.displayed01 {
+@media all and (max-width:480px) {
     
-    padding-left: 8%;
-    padding-top: 4%;
-    display: flex;
-    height: 7px;
-    max-width: 25%;
+    .displayed {
+    
+        padding-right: 4%;
+        padding-top: 5%;
+        display: flex;
+        height: 7px;
+        max-width: 25%;
+    }    
+
+    .displayed01 {
+
+        padding-left: 4%;
+        padding-top: 5%;
+        display: flex;
+        height: 7px;
+        max-width: 25%;
+    }
+    
+    .price {
+    
+        div:nth-child(1) {
+
+            padding-bottom: 30%;
+            padding-top: 20%;
+        }
+
+        div:nth-child(3) {
+
+            padding-bottom: 25%;
+        }
+    }
 }
