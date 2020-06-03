@@ -90,14 +90,6 @@ section {
   margin-bottom: 3%;
 }
 
-.price {
-  font-size: 18px;
-  display: flex;
-  padding-top: 2%;
-  width: 7%;
-  text-align: end;
-}
-
 .dessert {
   font-size: 18px;
   width: 90%;
@@ -117,18 +109,51 @@ section {
   -webkit-text-fill-color: transparent;
 }
 
-.displayed {
-  padding-right: 10%;
-  padding-top: 4%;
-  display: flex;
-  height: 7px;
-  max-width: 25%;
+@media all and (min-width: 768px) {
+  .displayed {
+    padding-right: 8%;
+    padding-top: 4%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
+  }
+  .displayed01 {
+    padding-left: 8%;
+    padding-top: 4%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
+  }
+  .price {
+    font-size: 18px;
+    display: flex;
+    padding-top: 2%;
+    width: 7%;
+    text-align: end;
+    flex-direction: column;
+  }
 }
 
-.displayed01 {
-  padding-left: 8%;
-  padding-top: 4%;
-  display: flex;
-  height: 7px;
-  max-width: 25%;
+@media all and (max-width: 480px) {
+  .displayed {
+    padding-right: 4%;
+    padding-top: 5%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
+  }
+  .displayed01 {
+    padding-left: 4%;
+    padding-top: 5%;
+    display: flex;
+    height: 7px;
+    max-width: 25%;
+  }
+  .price div:nth-child(1) {
+    padding-bottom: 30%;
+    padding-top: 20%;
+  }
+  .price div:nth-child(3) {
+    padding-bottom: 25%;
+  }
 }
