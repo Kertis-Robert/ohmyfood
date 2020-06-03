@@ -19,14 +19,14 @@ h3 {
   color: #c67412;
 }
 
-.A p {
+.A h5 {
   color: #c67412;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
-.A p:after {
+.A h5:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -39,24 +39,25 @@ h3 {
   width: 0;
 }
 
-.A p:hover:after {
+.A h5:hover:after {
   width: 100%;
   left: 0;
 }
 
 .B {
   margin: auto;
+  margin-bottom: 0%;
   color: #a56799;
 }
 
-.B p {
+.B h5 {
   color: #a56799;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
-.B p:after {
+.B h5:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -69,7 +70,7 @@ h3 {
   width: 0;
 }
 
-.B p:hover:after {
+.B h5:hover:after {
   width: 100%;
   left: 0;
 }
@@ -79,14 +80,14 @@ h3 {
   color: #6e4ccc;
 }
 
-.C p {
+.C h5 {
   color: #6e4ccc;
   text-decoration: none;
   display: inline-block;
   position: relative;
 }
 
-.C p:after {
+.C h5:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -99,7 +100,7 @@ h3 {
   width: 0;
 }
 
-.C p:hover:after {
+.C h5:hover:after {
   width: 100%;
   left: 0;
 }
@@ -109,7 +110,8 @@ h5 {
   font-size: 17px;
   font-weight: 700;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 6%;
+  margin-bottom: 7%;
   text-align: center;
 }
 
@@ -130,7 +132,8 @@ section {
 .nameA {
   font-size: 14px;
   width: 70%;
-  margin-top: 3%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   margin-left: 10%;
   color: #c67412;
 }
@@ -142,6 +145,7 @@ section {
   width: 7%;
   text-align: end;
   margin-right: 10%;
+  margin-top: 1%;
   color: #c67412;
   flex-direction: column;
 }
@@ -149,7 +153,8 @@ section {
 .nameB {
   font-size: 14px;
   width: 70%;
-  margin-top: 3%;
+  margin-top: 4%;
+  margin-bottom: 4%;
   margin-left: 10%;
   color: #a56799;
 }
@@ -161,6 +166,7 @@ section {
   width: 7%;
   text-align: end;
   margin-right: 10%;
+  margin-top: 1%;
   color: #a56799;
   flex-direction: column;
 }
@@ -178,7 +184,7 @@ section {
   .displayed {
     padding-left: 3%;
     padding-right: 3%;
-    padding-top: 5%;
+    padding-top: 3%;
     display: flex;
     height: 10px;
     max-width: 30%;
