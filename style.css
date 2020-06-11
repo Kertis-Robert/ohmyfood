@@ -36,11 +36,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   text-align: center;
   box-shadow: 0px 0px 10px 1px lightgrey;
   height: 325px;
   font-family: 'Damion', cursive;
-  margin: auto;
   background-color: #fcdfdb;
   transition: all 0.5s ease;
 }
@@ -79,11 +79,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   text-align: center;
   box-shadow: 0px 0px 10px 1px lightgrey;
   height: 325px;
   font-family: 'Kurale', serif;
-  margin: auto;
   background-color: #fff5fe;
   transition: all 0.5s ease;
 }
@@ -117,11 +117,11 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   text-align: center;
   box-shadow: 0px 0px 10px 1px lightgrey;
   height: 325px;
   font-family: 'Dancing Script', cursive;
-  margin: auto;
   background-color: #f0f0f0;
   transition: all 0.5s ease;
 }
@@ -153,12 +153,12 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   text-align: center;
   box-shadow: 0px 0px 10px 1px lightgrey;
   height: 325px;
   font-family: 'Kaushan Script', cursive;
   background-color: #fdfffd;
-  margin: auto;
   transition: all 0.5s ease;
 }
 
@@ -186,11 +186,9 @@ section {
 
 .next {
   display: flex;
-  justify-content: center;
   align-items: center;
   border-radius: 20px;
   background-color: #579c87;
-  text-align: center;
   height: 65px;
   margin: auto;
   margin-top: 1.5rem;
@@ -198,29 +196,32 @@ section {
 }
 
 .next p {
+  display: flex;
   font-family: 'Open Sans', sans-serif;
   font-size: 32px;
   color: #FDCB46;
+  margin: auto;
 }
 
 .dot-falling {
-  display: none;
-  align-items: center;
+  display: flex;
   position: relative;
   left: -9999px;
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 5px;
   background-color: #FDCB46;
   color: #FDCB46;
   box-shadow: 9999px 0 0 0 #FDCB46;
   animation: dotFalling 1s infinite linear;
   animation-delay: .1s;
+  margin-left: 23px;
+  margin-top: 23px;
 }
 
 .dot-falling:before, .dot-falling:after {
   content: '';
-  display: inline-block;
+  display: flex;
   position: absolute;
   top: 0;
 }
@@ -229,17 +230,9 @@ section {
   transition: all 0.5s ease;
 }
 
-.next:hover .soon {
-  display: none;
-}
-
-.next:hover .dot-falling {
-  display: flex;
-}
-
 .dot-falling::before {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 5px;
   background-color: #FDCB46;
   color: #FDCB46;
@@ -248,8 +241,8 @@ section {
 }
 
 .dot-falling::after {
-  width: 10px;
-  height: 10px;
+  width: 7px;
+  height: 7px;
   border-radius: 5px;
   background-color: #FDCB46;
   color: #FDCB46;
@@ -633,7 +626,7 @@ footer .right:hover {
     margin-bottom: 10%;
   }
   .next {
-    width: 60%;
+    width: 75%;
     margin-bottom: 10%;
   }
   footer .center {
