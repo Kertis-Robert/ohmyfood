@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
     text-align: center;
     box-shadow: 0px 0px 10px 1px lightgrey;
     height: 325px;
@@ -49,7 +50,6 @@ section {
     
     @include display;
     font-family: 'Damion', cursive;
-    margin: auto;
     background-color: rgb(252, 223, 219);
     transition: all 0.5s ease;
     
@@ -93,7 +93,6 @@ section {
     
     @include display;
     font-family: 'Kurale', serif;
-    margin: auto;
     background-color: rgb(255, 245, 254);
     transition: all 0.5s ease;
     
@@ -134,7 +133,6 @@ section {
     
     @include display;
     font-family: 'Dancing Script', cursive;
-    margin: auto;
     background-color: rgb(240, 240, 240);
     transition: all 0.5s ease;
     
@@ -174,7 +172,6 @@ section {
     @include display;
     font-family: 'Kaushan Script', cursive;
     background-color: #fdfffd;
-    margin: auto;
     transition: all 0.5s ease;
     
     &:hover {
@@ -210,12 +207,9 @@ section {
 .next {
     
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: rgb(87, 156, 135);
-    text-align: center;
-    
+    background-color: rgb(87, 156, 135);  
     height: 65px;
     margin: auto;
     margin-top: 1.5rem;
@@ -223,31 +217,34 @@ section {
     
     p {
         
+        display: flex;
         font-family: 'Open Sans', sans-serif;
         font-size: 32px;
         color: #FDCB46;
+        margin: auto;
     }
 }
 
 .dot-falling {
     
-      display: none;
-      align-items: center;
+      display: flex;
       position: relative;
       left: -9999px;
-      width: 10px;
-      height: 10px;
+      width: 7px;
+      height: 7px;
       border-radius: 5px;
       background-color: #FDCB46;
       color: #FDCB46;
       box-shadow: 9999px 0 0 0 #FDCB46;
       animation: dotFalling 1s infinite linear;
       animation-delay: .1s;
+      margin-left: 23px;
+      margin-top: 23px;
         
         &:before, &:after {
             
             content: '';
-            display: inline-block;
+            display: flex;
             position: absolute;
             top: 0;
         }
@@ -257,23 +254,12 @@ section {
     
     transition: all 0.5s ease;
     
-    &:hover {
-        
-        .soon {
-            
-            display: none; 
-        }
-        
-        .dot-falling {
-            
-            display: flex;
-        }
-    }
+    
 }
         .dot-falling::before {
 
-          width: 10px;
-          height: 10px;
+          width: 7px;
+          height: 7px;
           border-radius: 5px;
           background-color: #FDCB46;
           color: #FDCB46;
@@ -283,8 +269,8 @@ section {
 
         .dot-falling::after {
 
-          width: 10px;
-          height: 10px;
+          width: 7px;
+          height: 7px;
           border-radius: 5px;
           background-color: #FDCB46;
           color: #FDCB46;
@@ -636,7 +622,7 @@ footer {
     
     .next {
         
-        width: 60%;
+        width: 75%;
         margin-bottom: 10%;
     }
     
