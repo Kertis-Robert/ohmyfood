@@ -177,6 +177,16 @@ section {
     @include price;
     color: rgb(198, 116, 18);
     flex-direction: column;
+    
+    div:nth-child(1) {
+        
+        padding-bottom: 20px;
+    }
+    
+    div:nth-child(2) {
+        
+        padding-bottom: 20px;
+    }
 }
 .nameB {
     
