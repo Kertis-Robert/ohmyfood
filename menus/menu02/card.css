@@ -190,8 +190,8 @@ section {
 
 @media all and (min-width: 768px) {
   .displayed {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 2.8%;
+    padding-right: 2.8%;
     padding-top: 3%;
     display: flex;
     height: 10px;
